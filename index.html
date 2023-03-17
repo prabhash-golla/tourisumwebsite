@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoTravels</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        html,body{
+            width: 100%;
+            scroll-behavior: smooth;
+        }
+       #topnav{
+            display: flex;
+            justify-content:space-between;
+            position: sticky;
+            top:0;
+            background-color: black;
+      }
+       #topnav img{
+        float: left;
+       }
+       #topnav ul{
+            display:flex;
+            list-style: none;
+            float: right;
+            margin-right: 20px;
+       }
+       #topnav ul li{
+            font-size: 25px;
+       }
+       #topnav ul li a{
+            text-decoration: none;
+            display: block;
+            padding: 15px;
+            color: white;
+       }
+       #topnav ul li a:hover{
+        scale:110%;
+       }
+       #home{
+        background-image: linear-gradient(180deg,rgba(245,246,252,0.52),rgba(117,19,93,0.73)),url('https://static.euronews.com/articles/stories/05/36/83/90/1440x810_cmsv2_6187d843-7037-5073-92f1-c3a894a93ba2-5368390.jpg');
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        text-align: center;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        }
+        #Intro{
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 4rem;
+            margin-bottom: 1rem;
+        }
+        #Info{
+           max-width: 40rem;
+
+        }
+        #tour{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        .card{
+            background-color: rgba(91, 176, 250, 0.737);
+            border-radius: 1rem;
+            height: 21rem;
+            width: 20rem;
+            margin: 10px;
+            overflow: hidden;
+        }
+        .card .city{
+            width: 20rem;
+        }
+        .card  .city img{
+            width: 20rem;
+            height: 13rem;
+        }
+        .card .text{
+            text-align: center;
+            padding: 10px;
+        }
+        .card .text h3{
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div id="topnav">
+        <img src="logo.png" style="height: 55px;margin-left: 0;">
+       <ul>
+        <li><a href='#home'><i class="fa fa-home"></i>Home</a></li>
+        <li><a href='#aboutus'><i class="fa fa-user"></i>About us</a></li>
+        <li><a href='#tours'><i class="fa fa-plane"></i>Tours</a></li>
+        <li><a href='#contactus'><i class="fa fa-phone"></i>Contact Us</a></li>
+       </ul>
+    </div>
+    
+    <img src="https://toim.b-cdn.net/images/special-offer.png" width="256" height="66" alt="Trip to India" style="float: right;position: fixed;right: 0cqb;bottom: 0%;z-index: 2;" >
+    <div style="position: fixed;right: 0cqb;bottom: 0%;width: 100%;height:47px;background-color: black;">
+        <p style="color: #fff;text-align: center;font-size: 25px;padding: 5px;">We will help you in Planing your trip</p>
+    </div>
+    <div id="home">
+        <div id="Intro">
+        <div><img src="https://media.cnn.com/api/v1/images/stellar/prod/171017153620-the-taj-mahal-general-view.jpg?q=x_0,y_156,h_1688,w_3000,c_crop/h_720,w_1280/f_webp" style="height: 50vh;"></div>
+        <div id="Info">
+            <p style="color: #fff;font-size: 2.5rem;line-height: 3.5rem;">Let us plan you a
+                perfect India Holiday
+                Personalised, well-crafted tour packages for best experiences</p>
+        </div></div>
+        <center>
+            <p style="font-size: 2.5rem;color: #fff;line-height: 8rem;">About India Tour</p>
+            <p style="width: 80%;font-size: 1.5rem;color: #fff;line-height: 2rem;margin-bottom: 18px;">A kaleidoscope of traditions, culture, and vibrant geographies, India speaks for itself as a soul-stirring journey. Snow-covered peaks of the Himalayas stretch of coastline, natural greenery to depths of spirituality, and clusters of cultural shades. All of these aspects join together to define the raw beauty through which India captures the heart of every tourist. Discover the different facets of this multicolored country as it shapes your vision at every fold. With the country's tourism branched into several forms, India has a chunk for every kind of traveler. To get things going, here is an India travel planner which incorporates must-visit tourist attractions, places to visit in India, how to reach, and the best time to visit.</p></center>
+    </div>
+    <div id="tours">
+        <center><h1 style="margin-top: 20px;font-size: 3.5rem;margin-bottom: 20px;">Tours</h1></center>
+        <div id="tour">
+        <div class="card">
+            <div class="city">
+                <img src="https://assets-news.housing.com/news/wp-content/uploads/2021/07/20184714/All-about-the-Delhi-Red-Fort-or-Lal-Kila-FB-1200x700-compressed-2-686x400.jpg">
+            </div>
+            <div class="text">
+                <h3>Red Fort</h3>
+                <p>The Red Fort or Lal Qila is a historic fort in the Old Delhi neighbourhood of Delhi.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="city">
+                <img src="https://www.holidify.com/images/cmsuploads/compressed/Qutub_Minar_in_the_monsoons_20170908115259.jpg">
+            </div>
+            <div class="text">
+                <h3>Qutub Minar</h3>
+                <p>The Qutub Minar is a minaret and "victory tower" that forms part of the Qutub complex of Delhi.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="city">
+                <img src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcSkYIehIHVZF5GwyBVViiwsRQ9x4N-QpmjxMFH0FmZ44M637JwMMiDcRGc9AgoSoOUJZcsfOfGivoGZbbPNMovlQQ">
+            </div>
+            <div class="text">
+                <h3>Lotus Temple</h3>
+                <p>The temple's shape has symbolic and inter-religious significance because the lotus is often associated with purity, sacredness, spirituality and knowledge.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="city">
+                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRTwD0-98CZaC-1Nl0E5K59DzO6Cxl9v5X0rd2WVvvRmuhzwq5BfWC0sIq6-fH9kqgYrMR-HVJQzhMtvXmK4FpmxA">
+            </div>
+            <div class="text">
+                <h3>India Gate</h3>
+                <p>At the centre of New Delhi stands the 42 m high India Gate, an “Arc-de-Triomphe” like archway in the middle of a crossroad.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="city">
+                <img src="https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcTTSjKWCXjnoEtWBNGyNQvmqY5CHInB46D8j7W9tkcgMCqufDjxDBj8rn4DA1W9bo2K1lEKfn0ZMRiVdsSqS9FtxQ">
+            </div>
+            <div class="text">
+                <h3>Hawa Mahal</h3>
+                <p>The Hawa Mahal is a palace in the city of Jaipur, India. Built from red and pink sandstone, it is on the edge of the City Palace, Jaipur.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="city">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFi28PzCBO1UdZ0JMQxwWNMbS6jrtz0wdsQaUZv7BPpyGuzJmfaWwQdIx2AyvUgKJ1eQ0xydgDCy1lILh9eGWpzw">
+            </div>
+            <div class="text">
+                <h3>Nahargarh Fort</h3>
+                <p>Nahargarh Fort stands on the edge of the Aravalli Hills, overlooking the city of Jaipur in the Indian state of Rajasthan.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="city">
+                <img src="https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcSAHfJPHn4A36LSwxmzt9BUZxj4-nA6Z4tn_uIAr_-nHf8kB_5En5sOcPdAYqkASgzkXOyUwXKwnj4VaIxHQpY0wA">
+            </div>
+            <div class="text">
+                <h3>Jal Mahal</h3>
+                <p>Jal Mahal is a palace in the middle of the Man Sagar Lake in Jaipur city, the capital of the state of Rajasthan, India.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="city">
+                <img src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcRLyAzqY4EYtGtxEKPnHKd2HYgchNBGmYq8PLoOD6_1uKkZvBo1jtbHzC0KalxmJ-quIrO7SJGNqPVw1yAIdKYu5Q">
+            </div>
+            <div class="text">
+                <h3>Taj Mahal</h3>
+                <p>The Taj Mahal is an Islamic ivory-white marble mausoleum on the right bank of the river Yamuna in Agra, Uttar Pradesh, India.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="city">
+                <img src="https://assets.architecturaldigest.in/photos/60081ffd3a9d9570bc840b84/master/w_1600%2Cc_limit/Golden-Temple-Amritsar1.jpeg">
+            </div>
+            <div class="text">
+                <h3>Golden Temple</h3>
+                <p>The Golden Temple is a gurdwara located in the city of Amritsar, Punjab, India. It is the preeminent spiritual site of Sikhism. </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="city">
+                <img src="https://static.toiimg.com/photo/msid-69146268/69146268.jpg">
+            </div>
+            <div class="text">
+                <h3>Charminar</h3>
+                <p>The Charminar is a monument located in Hyderabad, Telangana, India. Constructed in 1591, the landmark is a symbol of Hyderabad and officially incorporated.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="city">
+                <img src="https://www.inditales.com/wp-content/uploads/2013/10/kailash-temple-ellora-caves.jpg">
+            </div>
+            <div class="text">
+                <h3>Ellora Cave</h3>
+                <p>Ellora is a UNESCO World Heritage Site located in the Aurangabad of Maharashtra, India. It is one of the largest rock-cut Hindu temple cave </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="city">
+                <img src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcTgZ61xDqOaqsFPfyrCfNB-49857KVxX7rzM6s5Taj8x3IAC_6PFY_pzbQ494iCRamUNNo-Sq6tulFWYfn6REGJHw">
+            </div>
+            <div class="text">
+                <h3>Howrah Bridge</h3>
+                <p>The Howrah Bridge is a balanced cantilever bridge over the Hooghly River in West Bengal.</p>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
