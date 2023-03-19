@@ -16,32 +16,32 @@
             width: 100%;
             scroll-behavior: smooth;
         }
-       #topnav{
+       #menucss{
             display: flex;
             justify-content:space-between;
             position: sticky;
             top:0;
             background-color: black;
       }
-       #topnav img{
+       #menucss img{
         float: left;
        }
-       #topnav ul{
+       #menucss ul{
             display:flex;
             list-style: none;
             float: right;
             margin-right: 20px;
        }
-       #topnav ul li{
+       #menucss ul li{
             font-size: 25px;
        }
-       #topnav ul li a{
+       #menucss ul li a{
             text-decoration: none;
             display: block;
             padding: 15px;
             color: white;
        }
-       #topnav ul li a:hover{
+       #menucss ul li a:hover{
         scale:110%;
         color: aqua;
        }
@@ -94,9 +94,16 @@
         .card .text h3{
             font-size: 1.5rem;
             line-height: 2rem;
+            color: black;
+        }
+        .card .text p{
+            color: rgb(9, 4, 85);
         }
         .card a{
             text-decoration: none;
+        }
+        .card:hover{
+            background: linear-gradient(225deg,rgba(91, 176, 250, 0.737),rgba(241, 77, 77, 0.737));
         }
         #why{
             background: rgba(249, 252, 167, 0.422);
@@ -219,7 +226,7 @@
             display: none;
         }
         @media only screen and (max-width: 650px){
-            #hide{
+            #hidecss{
                 display: none;
             }
             .fa-bars{
@@ -228,28 +235,40 @@
                 margin-right: 20px;
                 margin-top: 20px;
             }
-            .fa-bars:hover{
+            #about .about-sections{
+                width: 90%;
+                flex-wrap: wrap;
+            }
+            #menucss i:hover{
                 color: aqua;
             }
-            .fa-bars:hover #hide{
+            #menucss i:hover #hidecss{
                 display: block;
                 position: absolute;
-                color: #fff;
                 background-color: black;
                 margin-top: 15px;
-                margin-right:0px ;
+                margin-left: 0px;
             }
-            #topnav i :hover #hide ul{
+            #menucss i:hover #hidecss ul{
                 display: block;
-                margin: 10px;
-                list-style: none;
+                position: absolute;
+                background-color: black;
+                margin-top: 15px;
+                margin-left: 0px;
             }
-            #topnav i :hover #hide ul li{
-                width: 300px;
-                padding: 10px;
-                border-bottom: 1px dotted #fff;
-                background:transparent;
-                border-radius: 0ch; 
+            #menucss i:hover #hidecss ul li{
+                display: block;
+                position: absolute;
+                background-color: black;
+                margin-top: 15px;
+                margin-left: 0px;
+            }
+            #menucss i:hover #hidecss ul li a{
+                display: block;
+                position: absolute;
+                background-color: black;
+                margin-top: 15px;
+                margin-left: 0px;
             }
             #email,#number,#Query{
                 width:90%
@@ -265,9 +284,9 @@
     </style>
 </head>
 <body id="top">
-    <div id="topnav">
+    <div id="menucss">
         <img src="logo.png" style="height: 55px;margin-left: 0;">
-        <div id="hide"><ul>
+        <div id="hidecss"><ul>
         <li><a href='#home'><i class="fa fa-home"></i>Home</a></li>
         <li><a href='#why'><i class="fa fa-user"></i>About us</a></li>
         <li><a href='#tours'><i class="fa fa-plane"></i>Tours</a></li>
